@@ -4,6 +4,7 @@ MINIX_FS_MNT_DIR="minixfs"
 
 if [ "$EUID" -ne 0 ]; then
 	echo "This script must be run as root."
+	exit 1
 fi
 
 mkdir -p minixfs
